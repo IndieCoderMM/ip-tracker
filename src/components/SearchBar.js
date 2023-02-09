@@ -16,20 +16,17 @@ const SearchBar = () => {
     }
   };
   return (
-    <div className={styles.container}>
-      <h1>IP Address Tracker</h1>
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <input
-          ref={inputRef}
-          className={styles.input}
-          type="text"
-          placeholder="Search by IP or domain"
-        />
-        <button className={styles.button} type="submit">
-          <img src={ArrowIcon} width={10} alt="submit button" />
-        </button>
-      </form>
-    </div>
+    <form className={styles.form} onSubmit={handleSubmit}>
+      <input
+        ref={inputRef}
+        className={styles.input}
+        type="text"
+        placeholder="Search by IP or domain"
+      />
+      <button className={styles.button} type="submit">
+        <img src={ArrowIcon} width={10} alt="submit button" />
+      </button>
+    </form>
   );
 };
 

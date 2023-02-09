@@ -7,3 +7,18 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-image: url('./assets/pattern-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
+  position: relative;
+  color: #fff;
+  gap: 3rem;
+}

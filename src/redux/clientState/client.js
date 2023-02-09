@@ -7,8 +7,8 @@ export const getClientLocation = createAsyncThunk(
     const res = await IpifyService.getIpAddress();
     const clientIp = res.data.ip;
     const clientLocation = await IpifyService.getGeoByIp(clientIp);
-    const balance = await IpifyService.getRemainingCredits();
-    console.log('Balance Remaining: ', balance.data.credits);
+    // const balance = await IpifyService.getRemainingCredits();
+    // console.log('Balance Remaining: ', balance.data.credits);
     return clientLocation.data;
   },
 );

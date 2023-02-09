@@ -7,7 +7,7 @@ const Popup = () => {
   const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
   const queryStatus = useSelector((state) => state.query.status);
-  const queryData = useSelector((state) => state.query.data);
+  // const queryData = useSelector((state) => state.query.data);
 
   const showPopup = (t, msg) => {
     setVisible(true);
@@ -26,12 +26,12 @@ const Popup = () => {
       );
     if (queryStatus === 'error')
       showPopup('🙁ops!', "Sorry! We can't find your requested domain.");
-    if (queryStatus === 'success')
-      showPopup(
-        '🎫Credits',
-        `This app has ${queryData.credits / 2} requests available!`,
-      );
-  }, [queryStatus, queryData.credits]);
+    // if (queryStatus === 'success')
+    //   showPopup(
+    //     '🎫Credits',
+    //     `This app has ${queryData.credits / 2} requests available!`,
+    //   );
+  }, [queryStatus]);
 
   return (
     <>

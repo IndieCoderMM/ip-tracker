@@ -5,9 +5,9 @@ export const getQueryLocation = createAsyncThunk(
   'query/getQueryLocation',
   async (domain) => {
     const res = await IpifyService.getGeoByDomain(domain);
-    const balanceRes = await IpifyService.getRemainingCredits();
-    console.log('Balance Remaining: ', balanceRes.data.credits);
-    return { ...res.data, credits: balanceRes.data.credits };
+    // const balanceRes = await IpifyService.getRemainingCredits();
+    // console.log('Balance Remaining: ', balanceRes.data.credits);
+    return res.data;
   },
 );
 

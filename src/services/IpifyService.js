@@ -16,6 +16,7 @@ const getGeoByDomain = (domain) =>
 
 const getRemainingCredits = () =>
   axios.get(`https://geo.ipify.org/service/account-balance`, {
+    mode: 'no-cors',
     params: {
       apiKey: API_KEY,
     },

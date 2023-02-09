@@ -3,12 +3,13 @@
   gap: 0.5rem;
   background-color: #fff;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
   position: absolute;
-  bottom: -50px;
-  /* transform: translateY(100%); */
+  top: 80%;
   border-radius: 10px;
   color: #000;
   width: 80%;
   z-index: 10;
+  box-shadow: 3.9px 11.9px 5.3px rgba(0, 0, 0, 0.02),
+    13px 40px 17.9px rgba(0, 0, 0, 0.03), 58px 179px 80px rgba(0, 0, 0, 0.05);
 }

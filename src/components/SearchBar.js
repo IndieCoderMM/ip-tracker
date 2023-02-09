@@ -21,7 +21,7 @@ const SearchBar = () => {
         ref={inputRef}
         className={styles.input}
         type="text"
-        placeholder="Search by IP or domain"
+        placeholder="Search by IP address or domain"
       />
       <button className={styles.button} type="submit">
         <img src={ArrowIcon} width={10} alt="submit button" />

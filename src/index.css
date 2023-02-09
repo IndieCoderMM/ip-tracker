@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Roboto:wght@400;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,20 +6,21 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
 }
 
 header {
   display: flex;
+  height: 30vh;
+  padding: 1rem 0;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 3rem;
   background-image: url('./assets/pattern-bg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
   position: relative;
   color: #fff;
-  gap: 3rem;
+  gap: 2rem;
 }

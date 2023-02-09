@@ -17,7 +17,7 @@ const LocationCard = () => {
       <InfoBox title="Ip Address" data={ip} />
       <InfoBox
         title="Location"
-        data={`${city}, ${country} ${region} ${postalCode}`}
+        data={`${region}, ${country};${city} ${postalCode}`}
       />
       <InfoBox title="Timezone" data={`UTC ${timezone}`} />
       <InfoBox title="ISP" data={isp} />

@@ -21,7 +21,7 @@ const MapView = () => {
       center={[displayLocation.lat, displayLocation.lng]}
       zoom={15}
       scrollWheelZoom={false}
-      style={{ height: '70vh', width: '100vw' }}
+      style={{ height: '70vh', width: '100%', zIndex: 2 }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

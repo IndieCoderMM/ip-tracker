@@ -9,21 +9,22 @@ const getGeoByIp = (ip) =>
     params: { apiKey: API_KEY, ipAddress: ip },
   });
 
+const getGeoByDomain = (domain) =>
+  axios.get('https://geo.ipify.org/api/v2/country,city', {
+    params: { apiKey: API_KEY, domain },
+  });
+
 const getRemainingCredits = () =>
-  axios('https://geo.ipify.org/service/account-balance', {
-    method: 'GET',
-    mode: 'no-cors',
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Content-Type': 'application/json',
+  axios.get(`https://geo.ipify.org/service/account-balance`, {
+    params: {
+      apiKey: API_KEY,
     },
-    withCredentials: true,
-    params: { apiKey: API_KEY },
   });
 
 const IpifyService = {
   getIpAddress,
   getGeoByIp,
+  getGeoByDomain,
   getRemainingCredits,
 };
 

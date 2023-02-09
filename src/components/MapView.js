@@ -11,9 +11,9 @@ import MapRenderer from './MapRenderer';
 
 const MapView = () => {
   const clientLocation = useSelector((state) => state.client.data.location);
-  const queryLocation = useSelector((state) => state.query.data.location);
-  const displayLocation = Object.keys(queryLocation).length
-    ? queryLocation
+  const queryData = useSelector((state) => state.query.data);
+  const displayLocation = Object.keys(queryData).includes('location')
+    ? queryData.location
     : clientLocation;
 
   return (
@@ -37,9 +37,7 @@ const MapView = () => {
           })
         }
       >
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
+        <Popup>{displayLocation.city}</Popup>
       </Marker>
       <MapRenderer lat={displayLocation.lat} lng={displayLocation.lng} />
     </MapContainer>

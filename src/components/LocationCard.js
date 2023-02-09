@@ -6,7 +6,7 @@ import styles from './LocationCard.module.css';
 const LocationCard = () => {
   const clientData = useSelector((state) => state.client.data);
   const queryData = useSelector((state) => state.query.data);
-  const displayData = Object.keys(queryData.location).length
+  const displayData = Object.keys(queryData).includes('location')
     ? queryData
     : clientData;
   const { ip, isp } = displayData;

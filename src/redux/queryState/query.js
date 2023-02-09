@@ -4,22 +4,16 @@ import IpifyService from '../../services/IpifyService';
 export const getQueryLocation = createAsyncThunk(
   'query/getQueryLocation',
   async (domain) => {
-    try {
-      const res = await IpifyService.getGeoByDomain(domain);
-      const balance = await IpifyService.getRemainingCredits();
-      console.log(res.data);
-      console.log('Balance Remaining: ', balance.data.credits);
-      return res.data;
-    } catch (err) {
-      console.error(err);
-      return err.message;
-    }
+    const res = await IpifyService.getGeoByDomain(domain);
+    const balance = await IpifyService.getRemainingCredits();
+    console.log('Balance Remaining: ', balance.data.credits);
+    return res.data;
   },
 );
 
 const initialState = {
   status: 'idle',
-  data: { location: {} },
+  data: {},
   error: '',
 };
 
@@ -33,7 +27,7 @@ const querySlice = createSlice({
       })
       .addCase(getQueryLocation.rejected, (state, action) => {
         state.status = 'error';
-        state.error = action.payload;
+        state.error = action.error.message;
       })
       .addCase(getQueryLocation.fulfilled, (state, action) => {
         state.status = 'success';

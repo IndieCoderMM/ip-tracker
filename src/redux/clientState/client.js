@@ -4,17 +4,12 @@ import IpifyService from '../../services/IpifyService';
 export const getClientLocation = createAsyncThunk(
   'client/getClientLocation',
   async () => {
-    try {
-      const res = await IpifyService.getIpAddress();
-      const clientIp = res.data.ip;
-      const clientLocation = await IpifyService.getGeoByIp(clientIp);
-      const balance = await IpifyService.getRemainingCredits();
-      console.log('Balance Remaining: ', balance.data.credits);
-      return clientLocation.data;
-    } catch (err) {
-      console.error(err);
-      return err.message;
-    }
+    const res = await IpifyService.getIpAddress();
+    const clientIp = res.data.ip;
+    const clientLocation = await IpifyService.getGeoByIp(clientIp);
+    const balance = await IpifyService.getRemainingCredits();
+    console.log('Balance Remaining: ', balance.data.credits);
+    return clientLocation.data;
   },
 );
 
@@ -61,7 +56,7 @@ const clientSlice = createSlice({
       })
       .addCase(getClientLocation.rejected, (state, action) => {
         state.status = 'error';
-        state.error = action.payload;
+        state.error = action.error.message;
       })
       .addCase(getClientLocation.fulfilled, (state, action) => {
         state.status = 'success';

@@ -3,13 +3,15 @@
   gap: 0.5rem;
   background-color: #fff;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
   position: absolute;
   top: 80%;
   border-radius: 10px;
   color: #000;
   width: 80%;
   z-index: 10;
-  box-shadow: 3.9px 11.9px 5.3px rgba(0, 0, 0, 0.02),
-    13px 40px 17.9px rgba(0, 0, 0, 0.03), 58px 179px 80px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 6px 22.5px rgba(0, 0, 0, 0.02),
+    0px 9px 29.6px rgba(0, 0, 0, 0.028), 0px 12px 34.2px rgba(0, 0, 0, 0.035),
+    0px 15.6px 39.8px rgba(0, 0, 0, 0.042), 0px 20.5px 50px rgba(0, 0, 0, 0.05),
+    0px 31px 98px rgba(0, 0, 0, 0.07);
 }

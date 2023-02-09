@@ -11,7 +11,6 @@ const SearchBar = () => {
     e.preventDefault();
     const domain = inputRef.current.value.trim();
     if (domain.length) {
-      console.log(domain);
       dispatch(getQueryLocation(domain));
     }
   };
@@ -21,7 +20,7 @@ const SearchBar = () => {
         ref={inputRef}
         className={styles.input}
         type="text"
-        placeholder="Search by IP address or domain"
+        placeholder="Search by domain name (e.g, google.com)"
       />
       <button className={styles.button} type="submit">
         <img src={ArrowIcon} width={10} alt="submit button" />

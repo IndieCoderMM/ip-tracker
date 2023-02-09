@@ -3,9 +3,9 @@
   gap: 0.5rem;
   background-color: #fff;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 1.5rem 0.5rem;
   position: absolute;
-  top: 80%;
+  top: 75%;
   border-radius: 10px;
   color: #000;
   width: 80%;
@@ -14,4 +14,17 @@
     0px 9px 29.6px rgba(0, 0, 0, 0.028), 0px 12px 34.2px rgba(0, 0, 0, 0.035),
     0px 15.6px 39.8px rgba(0, 0, 0, 0.042), 0px 20.5px 50px rgba(0, 0, 0, 0.05),
     0px 31px 98px rgba(0, 0, 0, 0.07);
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    font-size: 0.7rem;
+    gap: 0;
+    padding: 0.25rem 0;
+    top: 60%;
+    max-height: 200px;
+    width: 70%;
+    overflow: auto;
+  }
 }

@@ -7,10 +7,10 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  min-height: 100vh;
 }
 
 main {
+  min-height: 100vh;
   position: relative;
 }
 
@@ -23,8 +23,15 @@ header {
   background-image: url('./assets/pattern-bg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: top left;
+  background-position: center;
   position: relative;
   color: #fff;
   gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
 }

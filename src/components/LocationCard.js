@@ -10,15 +10,12 @@ const LocationCard = () => {
     ? queryData
     : clientData;
   const { ip, isp } = displayData;
-  const { country, region, city, timezone, postalCode } = displayData.location;
+  const { country, city, timezone, postalCode } = displayData.location;
 
   return (
     <div className={styles.card}>
       <InfoBox title="Ip Address" data={ip} />
-      <InfoBox
-        title="Location"
-        data={`${region}, ${country};${city} ${postalCode}`}
-      />
+      <InfoBox title="Location" data={`${city}, ${country}; ${postalCode}`} />
       <InfoBox title="Timezone" data={`UTC ${timezone}`} />
       <InfoBox title="ISP" data={isp} />
     </div>

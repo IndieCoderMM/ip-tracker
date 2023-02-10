@@ -3,8 +3,11 @@ import IpifyService from '../../services/IpifyService';
 
 export const getQueryLocation = createAsyncThunk(
   'query/getQueryLocation',
-  async (domain) => {
-    const res = await IpifyService.getGeoByDomain(domain);
+  async (query) => {
+    const res =
+      query.split('.').length === 2
+        ? await IpifyService.getGeoByDomain(query)
+        : await IpifyService.getGeoByIp(query);
     // const balanceRes = await IpifyService.getRemainingCredits();
     // console.log('Balance Remaining: ', balanceRes.data.credits);
     return res.data;

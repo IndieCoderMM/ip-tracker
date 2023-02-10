@@ -9,22 +9,24 @@ const SearchBar = () => {
   const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
-    const domain = inputRef.current.value.trim();
-    if (domain.length) {
-      dispatch(getQueryLocation(domain));
+    const query = inputRef.current.value.trim();
+    if (query.length) {
+      dispatch(getQueryLocation(query));
     }
   };
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <input
-        ref={inputRef}
-        className={styles.input}
-        type="text"
-        placeholder="Search by domain name"
-      />
-      <button className={styles.button} type="submit">
-        <img src={ArrowIcon} width={10} alt="submit button" />
-      </button>
+      <div className={styles.formGroup}>
+        <input
+          ref={inputRef}
+          className={styles.input}
+          type="text"
+          placeholder="Search by IP or domain"
+        />
+        <button className={styles.button} type="submit">
+          <img src={ArrowIcon} width={10} alt="submit button" />
+        </button>
+      </div>
     </form>
   );
 };

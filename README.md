@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+## Table of contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [🧭 IP Address Tracker](#-ip-address-tracker)
+  - [📌 Overview](#-overview)
+    - [🎯 Challenge](#-challenge)
+    - [📸 Screenshot](#-screenshot)
+    - [🔗 Links](#-links)
+  - [🚂 My process](#-my-process)
+    - [🧰 Built With](#-built-with)
+    - [📝 What I learned](#-what-i-learned)
+    - [🔭 Future features](#-future-features)
+    - [💎 Useful resources](#-useful-resources)
+  - [📧 Connect wit me](#-connect-wit-me)
+  - [🤝 Contributing](#-contributing)
+  - [💖 Show your support](#-show-your-support)
+  - [📜 License ](#-license-)
 
-## Available Scripts
+# 🧭 IP Address Tracker
 
-In the project directory, you can run:
+**IP Tracker** is a website that allows users to track the location of an IP address or domain name. This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0).
 
-### `npm start`
+## 📌 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🎯 Challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements on the page
+- See their own IP address on the map on the initial page load
+- Search for any IP addresses or domains and see the key information and location
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📸 Screenshot
 
-### `npm run build`
+![Screenshot](./app_screenshot.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔗 Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Solution URL: [GitHub Repo](https://github.com/IndieCoderMM/ip-tracker)
+- Live Site URL: [IP Tracker Website](https://indiecodermm.github.io/ip-tracker)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚂 My process
 
-### `npm run eject`
+### 🧰 Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [React.js](https://reactjs.org/) - to create UI and dynamic components
+- [React Leaflet](https://react-leaflet.js.org/) - to visualize geolocation data
+- [Redux Toolkit](https://redux-toolkit.js.org/) - to manage the state and API calls
+- [IP Geolocation API](https://geo.ipify.org/) - to locate IP address
+- [ipify API](https://www.ipify.org/) - to get client IP address
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 📝 What I learned
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project allowed me to deepen my understanding of React and Redux and develop many other skills and knowledge in web development.
+- I learned how IP address and domain work and how they can be used to locate a website.
+- I learned how to use React Leaflet to provide an interactive and intuitive way to view maps.
+- I learned how to handle errors effectively in redux thunks and how to improve UX when errors occur.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🔭 Future features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [ ] User Authentication to provide personalized experience
+- [ ] Show Remaining Credits for the API
+- [ ] Feedback System to get suggestion and bug report
 
-### Code Splitting
+### 💎 Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Create Maps using React Leaflet](https://youtu.be/2KUYOdTXK74) - Tutorial on how to use Leaflet in React
+- [Handling errors with Redux Toolkit](https://stackoverflow.com/questions/63439021/handling-errors-with-redux-toolkit) - StackOverflow thread on error handling with Redux toolkit
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📧 Connect wit me
 
-### Making a Progressive Web App
+I am always looking for ways to improve my project. If you have any suggestions or ideas, I would love to hear from you.
+- GitHub - [IndieCoderMM](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Linkedin - [@hthantoo](https://www.linkedin.com/in/hthantoo/)
+- Gmail - [hthant00chk@gmail.com](mailto:hthant00chk@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🤝 Contributing
 
-### Advanced Configuration
+I welcome any and all contributions to my website! If you have an idea for a new feature or have found a bug, please open an issue or submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feel free to check the [issues page](../../issues/).
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 💖 Show your support
+If you like this project, please consider giving it a ⭐.
 
-### `npm run build` fails to minify
+## 📜 License <a name="license"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.

@@ -54,7 +54,7 @@ Users should be able to:
 
 This project allowed me to deepen my understanding of React and Redux and develop many other skills and knowledge in web development.
 - I learned how IP address and domain work and how they can be used to locate a website.
-- I learned how to use React Leaflet to provide an interactive and intuitive way to view maps.
+- I learned how to use LeafletJS to provide an interactive and intuitive way to view maps.
 - I learned how to handle errors effectively in redux thunks and how to improve UX when errors occur.
 
 
@@ -74,7 +74,7 @@ This project allowed me to deepen my understanding of React and Redux and develo
 
 I am always looking for ways to improve my project. If you have any suggestions or ideas, I would love to hear from you.
 - GitHub - [IndieCoderMM](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@IndieCoderMM](https://www.frontendmentor.io/profile/IndieCoderMM)
 - Linkedin - [@hthantoo](https://www.linkedin.com/in/hthantoo/)
 - Gmail - [hthant00chk@gmail.com](mailto:hthant00chk@gmail.com)
 

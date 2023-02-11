@@ -36,7 +36,7 @@ Users should be able to:
 
 ### 🔗 Links
 
-- Solution URL: [My Solution]https://www.frontendmentor.io/solutions/ip-address-tracker-using-reactjs-and-redux-toolkit-oNQjiq8fbS)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/ip-address-tracker-using-reactjs-and-redux-toolkit-oNQjiq8fbS)
 - Live Site URL: [IP Tracker Website](https://indiecodermm.github.io/ip-tracker)
 
 ## 🚂 My process
